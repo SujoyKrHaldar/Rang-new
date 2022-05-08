@@ -1,0 +1,27 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
+
+function Navbar_Desktop({ navLinks }) {
+  const router = useRouter();
+
+  return (
+    <>
+      {navLinks.map((links, index) => (
+        <Link href={links.url} key={index}>
+          <a
+            className={`py-4  ${
+              router.pathname == links.url ||
+              router.pathname.includes(links.url)
+                ? "before:absolute before:bottom-[-9px] before:left-0 before:bg-white before:w-full before:h-[2px]"
+                : ""
+            }`}
+          >
+            {links.link}
+          </a>
+        </Link>
+      ))}
+    </>
+  );
+}
+
+export default Navbar_Desktop;

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Landing from "../components/home/Landing";
 import Services from "../components/home/Services";
-import Footer from "../components/layout/Footer";
+import Layout from "../components/layout/Layout";
 
 export default function Home() {
   return (
@@ -12,9 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Landing />
-      <Services />
-      <Footer />
+      <Layout>
+        <Landing />
+        <Services />
+      </Layout>
     </>
   );
 }
