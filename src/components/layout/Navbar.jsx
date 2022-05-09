@@ -53,10 +53,13 @@ function Navbar() {
             </div>
           </Link>
 
-          <div className="flex items-center justify-between gap-14">
+          <div className="flex items-center justify-between gap-8">
             <Navbar_Desktop navLinks={navLinks} />
 
-            <div onClick={openModel} className="flex text-3xl cursor-pointer">
+            <div
+              onClick={openModel}
+              className="md:hidden flex text-3xl cursor-pointer"
+            >
               <FiMenu />
             </div>
           </div>

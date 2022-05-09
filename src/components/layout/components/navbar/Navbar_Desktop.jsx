@@ -6,20 +6,22 @@ function Navbar_Desktop({ navLinks }) {
 
   return (
     <>
-      {navLinks.map((links, index) => (
-        <Link href={links.url} key={index}>
-          <a
-            className={`py-4  ${
-              router.pathname == links.url ||
-              router.pathname.includes(links.url)
-                ? "before:absolute before:bottom-[-9px] before:left-0 before:bg-white before:w-full before:h-[2px]"
-                : ""
-            }`}
-          >
-            {links.link}
-          </a>
-        </Link>
-      ))}
+      <div className="hidden md:flex items-center justify-between gap-12">
+        {navLinks.map((links, index) => (
+          <Link href={links.url} key={index}>
+            <a
+              className={`py-4  ${
+                router.pathname == links.url ||
+                router.pathname.includes(links.url)
+                  ? "before:absolute before:bottom-[-9px] before:left-0 before:bg-white before:w-full before:h-[2px]"
+                  : ""
+              }`}
+            >
+              {links.link}
+            </a>
+          </Link>
+        ))}
+      </div>
     </>
   );
 }

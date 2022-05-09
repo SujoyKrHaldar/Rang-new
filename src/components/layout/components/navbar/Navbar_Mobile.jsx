@@ -8,7 +8,7 @@ function Navbar_Mobile({ navLinks, open, setOpen }) {
 
   return (
     <>
-      <div className="w-screen h-screen fixed top-0 right-0 z-[11] overflow-hidden pointer-events-none flex items-center justify-end">
+      <div className="md:hidden w-screen h-screen fixed top-0 right-0 z-[11] overflow-hidden pointer-events-none flex items-center justify-end">
         <div
           className={`flex-1 p-[6rem] h-full max-w-[460px] bg-black text-white flex items-center justify-start pointer-events-auto duration-300
           ${open ? " translate-x-0 opacity-100" : " translate-x-full opacity-0"}
