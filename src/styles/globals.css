@@ -10,6 +10,12 @@
   transition: 0.3s ease;
 }
 
+div#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 html,
 body {
   scroll-behavior: smooth;
