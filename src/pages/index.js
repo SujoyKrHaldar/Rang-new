@@ -13,7 +13,7 @@ export default function Home() {
 
       <Layout>
         <Landing />
-        <Services />
+        {/* <Services /> */}
       </Layout>
     </>
   );

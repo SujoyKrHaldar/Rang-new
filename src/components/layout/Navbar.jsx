@@ -16,15 +16,15 @@ const navLinks = [
   },
   {
     link: "Events",
-    url: "/event",
+    url: "/events",
   },
   {
     link: "Contact",
     url: "/contact",
   },
   {
-    link: "Donation",
-    url: "/donation",
+    link: "Donate",
+    url: "/donate",
   },
 ];
 

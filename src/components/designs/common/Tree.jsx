@@ -4,7 +4,7 @@ function Tree() {
   return (
     <div className="w-[40px]">
       <Image
-        src="/assets/decorative-image.png"
+        src="/assets/Decorative-image.png"
         alt="Decorative image"
         objectFit="cover"
         objectPosition="center"

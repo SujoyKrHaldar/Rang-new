@@ -7,7 +7,7 @@ const quickLinks = [
   },
   {
     link: "Become Volunteer",
-    url: "/",
+    url: "/become-volunteer",
   },
   {
     link: "Make Donations",
