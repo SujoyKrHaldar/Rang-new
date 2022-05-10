@@ -14,7 +14,7 @@ function Services() {
                 Warm and true{" "}
                 <span className="font-bold">Support for Needy people</span>
               </h2>
-              <p className="mt-4 text-[1rem]">
+              <p className="mt-4">
                 We believe that Every penny counts. You can help us by donating
                 any amount that you like to. Come forward and help the needy and
                 add colours to their life and let them smile.

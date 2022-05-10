@@ -15,7 +15,7 @@ const quickLinks = [
   },
   {
     link: "Annual Report",
-    url: "/",
+    url: "/annual-reports",
   },
 ];
 

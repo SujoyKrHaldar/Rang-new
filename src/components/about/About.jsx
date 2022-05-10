@@ -4,8 +4,8 @@ function About() {
   return (
     <>
       <div className="w-full h-auto py-16">
-        <div className="container w-full h-full flex items-center justify-start">
-          <div className=" py-4">
+        <div className="container w-full h-full ">
+          <div className="flex-1 py-4">
             <Tree />
 
             <h2>
@@ -25,6 +25,19 @@ function About() {
               of Corporate Affairs, Government of India, on 14 February 2020,
               just before the COVID-19 pandemic hit India.
             </p>
+
+            {/* <div className=" flex items-center justify-center gap-4">
+              <img
+                className="flex-1"
+                src="/assets/Group-pic.webp"
+                alt="About us"
+              />
+              <img
+                className="flex-1"
+                src="/assets/Group-meeting.webp"
+                alt="About us"
+              />
+            </div> */}
           </div>
         </div>
       </div>

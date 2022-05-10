@@ -13,12 +13,12 @@ function BackgroundImage({ src, alt, className, position, objFit }) {
         objectPosition={position || "center"}
         layout="fill"
         loading="eager"
-        className={className}
-        // className={`${className} duration-1000
-        //       ${
-        //         isLoading ? "scale-105 blur-md opacity-0" : " blur-0 scale-100 "
-        //       }`}
-        // onLoadingComplete={() => setLoading(false)}
+        // className={className}
+        className={`${className} duration-1000
+              ${
+                isLoading ? "scale-105 blur-md opacity-0" : " blur-0 scale-100 "
+              }`}
+        onLoadingComplete={() => setLoading(false)}
       />
     </div>
   );

@@ -13,7 +13,8 @@ function donation() {
       <Layout>
         <LandingTemplate
           height="h-[55vh]"
-          title="Donate us for great cause"
+          title="Donate us"
+          desc="for great causes"
           src="/assets/Donatation.webp"
           alt="Donate page landing image"
           className="opacity-60"

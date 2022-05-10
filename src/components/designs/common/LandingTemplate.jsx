@@ -1,6 +1,14 @@
 import BackgroundImage from "./BackgroundImage";
 
-function LandingTemplate({ height, title, src, alt, className, imgPosition }) {
+function LandingTemplate({
+  height,
+  title,
+  src,
+  alt,
+  className,
+  imgPosition,
+  desc,
+}) {
   return (
     <>
       <div className={`w-full ${height}`}>
@@ -12,8 +20,9 @@ function LandingTemplate({ height, title, src, alt, className, imgPosition }) {
         />
 
         <div className="container w-full h-full flex items-end justify-start">
-          <div className="max-w-lg text-white py-4">
-            <h1 className="py-14 ">{title}</h1>
+          <div className="max-w-lg text-white py-16">
+            <h1>{title}</h1>
+            {desc && <p className="max-w-[430px] mt-4 text-lg">{desc}</p>}
           </div>
         </div>
       </div>
