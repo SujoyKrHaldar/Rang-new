@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/layout/Layout";
 import LandingTemplate from "../components/designs/common/LandingTemplate";
+import Contact from "../components/contact/Contact";
 
 function contact() {
   return (
@@ -19,6 +20,7 @@ function contact() {
           className="opacity-40"
           imgPosition="50% 40%"
         />
+        <Contact />
       </Layout>
     </>
   );

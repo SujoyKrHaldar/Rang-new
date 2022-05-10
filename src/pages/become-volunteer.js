@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/layout/Layout";
-import LandingTemplate from "../components/designs/common/LandingTemplate";
+import BeVolunteerLanding from "../components/others/BeVolunteerLanding";
+import VolunteerLinks from "../components/others/VolunteerLinks";
 
 function becomeVolunteer() {
   return (
@@ -11,14 +12,8 @@ function becomeVolunteer() {
       </Head>
 
       <Layout>
-        <LandingTemplate
-          height="h-[55vh]"
-          title="Join us to Volunteer"
-          src="/assets/Volunteer.webp"
-          alt="Event page landing image"
-          className="opacity-40"
-          imgPosition="50% 40%"
-        />
+        <BeVolunteerLanding />
+        <VolunteerLinks />
       </Layout>
     </>
   );
