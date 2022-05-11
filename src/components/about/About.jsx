@@ -1,11 +1,14 @@
+import { useState } from "react";
+import Image from "next/image";
 import Tree from "../designs/common/Tree";
 
 function About() {
+  const [isLoading, setLoading] = useState(true);
   return (
     <>
       <div className="w-full h-auto py-16">
         <div className="container w-full h-full ">
-          <div className="flex-1 py-4">
+          <div className="flex-1 ">
             <Tree />
 
             <h2>
@@ -25,19 +28,35 @@ function About() {
               of Corporate Affairs, Government of India, on 14 February 2020,
               just before the COVID-19 pandemic hit India.
             </p>
+          </div>
 
-            {/* <div className=" flex items-center justify-center gap-4">
-              <img
-                className="flex-1"
+          <div className="my-8 flex items-center justify-center gap-8">
+            <div className="flex-1 h-[365px]">
+              <Image
                 src="/assets/Group-pic.webp"
                 alt="About us"
+                objectFit="cover"
+                objectPosition="center"
+                layout="fill"
+                loading="eager"
+                className={` duration-1000
+                  ${isLoading ? " opacity-0" : "  "}`}
+                onLoadingComplete={() => setLoading(false)}
               />
-              <img
-                className="flex-1"
+            </div>
+            <div className="flex-1 h-[365px]">
+              <Image
                 src="/assets/Group-meeting.webp"
                 alt="About us"
+                objectFit="cover"
+                objectPosition="center"
+                layout="fill"
+                loading="eager"
+                className={` duration-1000
+                 ${isLoading ? " opacity-0" : "  "}`}
+                onLoadingComplete={() => setLoading(false)}
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

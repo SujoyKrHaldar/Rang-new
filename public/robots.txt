@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /about
+Disallow: /contact/
+Disallow: /events/reports
+Crawl-delay: 10
