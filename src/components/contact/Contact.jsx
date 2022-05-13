@@ -12,7 +12,7 @@ function Contact() {
             <h2>
               Spread the love - <span className="font-bold">Get involved!</span>
             </h2>
-            <p className="mt-4 text-xl mb-4">
+            <p className="mt-4 text-xl mb-8">
               Join us to Save the World Of Humanitarian and Feel happy to
               Support.
             </p>
